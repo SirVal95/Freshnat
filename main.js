@@ -14,6 +14,15 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
 }))
 
 
+window.addEventListener('mouseup', function(e){
+  var menu = document.getElementById('menu');
+  if(e.target !== menu && e.target !== menu_btn){
+    menu_btn.classList.remove("is-active");
+    mobile_menu.classList.remove("is-active");
+  }
+})
+
+
 // Get the button for scroll to top and the div for nav-bar:
 let mybutton = document.getElementById("myBtn");
 let navBar = document.getElementById("nav-bar");
@@ -41,22 +50,23 @@ function topFunction () {
 
 // PRELOADER
 
-// var loader = document.getElementById("preloader");
+var loader = document.getElementById("preloader");
 
-// window.addEventListener("load", function(){
-//   loader.style.display = "none";
-// });
+window.addEventListener("load", function(){
+  loader.style.display = "none";
+});
 
 
 // scroll reveal
 
-// ScrollReveal({
-//   reset: true,
-//   distance:'20px',
-//   delay: 60,
-//   duration: 1500
-// });
+ScrollReveal({
+  reset: true,
+  distance:'20px',
+  delay: 60,
+  duration: 1500
+});
 
 
-// ScrollReveal().reveal('', { delay: 50, origin: 'bottom', interval: 100 });
+ScrollReveal().reveal('.fresh-and-natural-1, .freshest, .the-box', { delay: 50, origin: 'bottom', interval: 100 });
+ScrollReveal().reveal('.vegetable, .buy-your-craving', { delay: 50, origin: 'top', interval: 100 });
 
