@@ -50,11 +50,11 @@ function topFunction () {
 
 // PRELOADER
 
-var loader = document.getElementById("preloader");
+// var loader = document.getElementById("preloader");
 
-window.addEventListener("load", function(){
-  loader.style.display = "none";
-});
+// window.addEventListener("load", function(){
+//   loader.style.display = "none";
+// });
 
 
 // scroll reveal
@@ -67,6 +67,6 @@ ScrollReveal({
 });
 
 
-ScrollReveal().reveal('.fresh-and-natural-1, .freshest, .the-box', { delay: 50, origin: 'bottom', interval: 100 });
+ScrollReveal().reveal('.fresh-and-natural-1, .freshest, .the-box, .the-blog-box', { delay: 50, origin: 'bottom', interval: 100 });
 ScrollReveal().reveal('.vegetable, .buy-your-craving', { delay: 50, origin: 'top', interval: 100 });
 

@@ -9,6 +9,7 @@ html {
 body {
     background: #F0FFF7;
     font-family: 'Plus Jakarta Sans';
+   
 }
 
 a {
@@ -66,6 +67,7 @@ a {
     z-index: 999999;
     top: 0;
     right: 0;
+   
 }
 
 .logo img {
@@ -297,7 +299,7 @@ a {
 
 .vegetable .img10 {
     position: absolute;
-    left: 0;
+    left: -150px;
     margin-top: 300px;
 }
 
@@ -359,7 +361,7 @@ a {
 .freshest-ingredients .dots-container {
     position: absolute;
     left: -40px;
-    margin-top: 470px;
+    margin-top: 490px;
     z-index: 1;
 }
 
@@ -454,7 +456,8 @@ a {
         opacity: 0;
         width: 80%;
         min-height: 70vh;
-        background: #03011C;
+        background: #13A3AC;
+        border-bottom-right-radius: 20px;
         z-index: 99;
         transition: visibility 0.6s, opacity 0.6s linear;
     }
@@ -485,7 +488,7 @@ a {
     
     .menu a:hover {
         padding-left: 30px;
-        background: #f0fff728;
+        background: #03011C;
     }
 
     .menu a:hover::after {
@@ -585,7 +588,7 @@ a {
     }
 
     .freshest-ingredients .dots-container {
-        top: 350px;
+        top: 370px;
         left: -80px;
     }
 
@@ -656,11 +659,11 @@ a {
     max-width: 1500px;
     height: auto;
     margin: auto auto;
-    
+    padding-left: 0;
 }
 
 .about-us .cover {
-    /* width: 90%; */
+    margin: 20px 0;
     height: auto;
     position: absolute;
     padding: 63px 80px;
@@ -712,6 +715,7 @@ a {
 .buy-your-craving a:hover {
     transform: translateY(-10px);
 }
+
 .boxes {
     display: flex;
     justify-content: space-between;
@@ -787,6 +791,7 @@ a {
 
 @media screen and (max-width:800px) {
     .about-us .cover{
+        position: relative;
         flex-direction: column;
         align-items: center;
         width: 100%;
@@ -825,6 +830,7 @@ a {
         margin-right: 0;
         margin-bottom: 40px;
     }
+
 }
 
 /* ABOUT US SESSION MEDIA QUERY FOR SOME TABLETS */
@@ -835,6 +841,7 @@ a {
         align-items: center;
         margin-top: 70px;
         width: 100%;
+        position: relative;
     }
 
     .freshest-ingredients .dots-container .dots{
@@ -874,4 +881,213 @@ a {
         margin-right: 0;
     }
     
+}
+
+/* ABOUT US SESSION END */
+
+/* OUR BLOG SESSION */
+
+.our-blog {
+    width: 100%;
+    height: auto;
+    padding: 50px 120px;
+    margin-top: 200px;
+    position: absolute;
+    margin: 200px auto auto;
+    max-width: 1500px;
+}
+
+.our-blog .img12 {
+    position: absolute;
+    left: 20px;
+    margin-top: 50px;
+    height: 200px;
+}
+
+.our-blog .img13 {
+    position: absolute;
+    right: 0;
+    height: 330px;
+}
+
+.our-blog h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    color: #13A3AC;
+    margin: 15px 0;
+}
+
+.our-blog h4 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.2em;
+    color: #13A3AC;
+    margin-bottom: 35px;
+}
+
+.the-blog-box {
+    width: 100%;
+    height: auto;
+    background: #FFFFFF;
+    padding: 20px 40px;
+    border-radius: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.the-blog-box img {
+    margin-right: 40px;
+    height: 270px;
+}
+
+.the-blog-box:last-child {
+    margin-bottom: 0;
+}
+
+.the-blog h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #13A3AC;
+    margin-bottom: 20px;
+}
+
+.the-blog p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    color: #13A3AC;
+    margin-bottom: 13px;
+}
+
+.the-blog a {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-style: normal;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 200%;
+    color: #13A3AC;
+    text-align: center;
+    padding: 10px 40px;
+    gap: 10px;
+    background: rgba(19, 163, 172, 0.1);
+    border-radius: 50px;
+    transition: 0.5s ease-in-out;
+}
+
+.the-blog a:hover {
+    transform: translateY(-10px);
+}
+
+.the-blog a i {
+    border-color: #13A3AC;
+}
+
+.our-blog .img14 {
+    position: absolute;
+    left: 0;
+    height: 330px;
+    margin-top: -150px;
+}
+
+@media screen and (max-width:800px) {
+    .our-blog {
+        position: relative;
+        padding: 15px;
+        margin: 40px 0;
+    }
+
+    .the-blog-box {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .our-blog .img12 {
+        top: -120px;
+        height: 100px;
+    }
+
+    .img0 {
+        display: none;
+    }
+
+    .our-blog .img13 {
+        height: 150px;
+        top: -100px;
+    } 
+
+    .our-blog h1 {
+        font-size: 33px;
+        line-height: 40px;
+    }
+
+    .our-blog h4 {
+        font-size: 14px;
+    }
+
+    .the-blog-box {
+        align-items: center;
+        padding: 20px;
+    }
+
+    .the-blog-box img {
+        height: 210px;
+    }
+
+    .the-blog-box h2 {
+        font-size: 23px;
+        line-height: 40px;
+        margin-top: 20px;
+    }
+
+    .the-blog-box p {
+        font-size: 14px;
+        line-height: 180%;
+    }
+
+    .our-blog .img14 {
+        height: 150px;
+        margin-top: -40px;
+    }
+}
+
+/* OUR BLOG SESSION MEDIA QUERY FOR SOME TABLETS */
+
+@media only screen and (max-width:1100px) and (min-width:800px) {
+    .our-blog {
+        position: relative;
+        padding: 25px;
+        margin: 40px 0;
+    }
+
+    .our-blog .img12 {
+        top: -120px;
+        height: 120px;
+    }
+
+    .img0 {
+        display: none;
+    }
+
+    .our-blog .img13 {
+        height: 250px;
+        top: -100px;
+    } 
+
+    .our-blog .img14 {
+        height: 250px;
+    }
+
+    .the-blog-box {
+        align-items: center;
+    }
 }
