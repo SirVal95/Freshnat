@@ -137,6 +137,7 @@ a {
 
 
 .fresh-and-natural {
+    position: relative;
     background: #13A3AC;
     border-radius: 30px;
     color: #FFFFFF;
@@ -212,7 +213,7 @@ a {
     font-size: 16px;
 }
 
-::placeholder {
+.fresh-and-natural-1 form ::placeholder {
     font-size: 16px;
     color: #FFFFFF;
 }
@@ -299,8 +300,8 @@ a {
 
 .vegetable .img10 {
     position: absolute;
-    left: -150px;
-    margin-top: 300px;
+    left: -40px;
+    margin-top: 310px;
 }
 
 .freshest {
@@ -455,9 +456,8 @@ a {
         visibility: hidden;
         opacity: 0;
         width: 80%;
-        min-height: 70vh;
-        background: #13A3AC;
-        border-bottom-right-radius: 20px;
+        min-height: 100vh;
+        background: #01131b;
         z-index: 99;
         transition: visibility 0.6s, opacity 0.6s linear;
     }
@@ -569,11 +569,12 @@ a {
     }
 
     .vegetable .img10 {
-        margin-top: 450px;
+        margin-top: 550px;
+        left: -50px;
     }
 
     .fresh-and-natural .dots-container {
-        top: 350px;
+        top: 280px;
     }
 
     .freshest-ingredients {
@@ -647,6 +648,10 @@ a {
     .freshest p {
         font-size: 17px;
     }
+
+    .vegetable .img10 {
+        display: none;
+    }
 }
 
 
@@ -660,12 +665,14 @@ a {
     height: auto;
     margin: auto auto;
     padding-left: 0;
+    position: relative;
 }
 
 .about-us .cover {
     margin: 20px 0;
     height: auto;
-    position: absolute;
+    /* position: absolute; */
+    width: 95%;
     padding: 63px 80px;
     gap: 10px;
     background: #FFFFFF;
@@ -789,6 +796,20 @@ a {
     color: #FFFFFF;
 }
 
+.img12 {
+    position: absolute;
+    left: 0;
+    height: 160px;
+    bottom: -100px;
+}
+
+.img13 {
+    position: absolute;
+    right: -50px;
+    height: 300px;
+    bottom: -220px;
+}
+
 @media screen and (max-width:800px) {
     .about-us .cover{
         position: relative;
@@ -829,6 +850,17 @@ a {
     .the-box {
         margin-right: 0;
         margin-bottom: 40px;
+    }
+
+    .img12 {
+        height: 90px;
+        bottom: -70px;
+    }
+    
+    .img13 {
+        right: 0;
+        height: 150px;
+        bottom: -110px;
     }
 
 }
@@ -880,6 +912,17 @@ a {
     .boxes .the-box:last-child {
         margin-right: 0;
     }
+
+    .img12 {
+        height: 100px;
+        bottom: -60px;
+    }
+    
+    .img13 {
+        right: 0px;
+        height: 170px;
+        bottom: -120px;
+    }
     
 }
 
@@ -890,24 +933,8 @@ a {
 .our-blog {
     width: 100%;
     height: auto;
-    padding: 50px 120px;
-    margin-top: 200px;
-    position: absolute;
-    margin: 200px auto auto;
+    margin: 100px auto auto;
     max-width: 1500px;
-}
-
-.our-blog .img12 {
-    position: absolute;
-    left: 20px;
-    margin-top: 50px;
-    height: 200px;
-}
-
-.our-blog .img13 {
-    position: absolute;
-    right: 0;
-    height: 330px;
 }
 
 .our-blog h1 {
@@ -916,7 +943,7 @@ a {
     font-size: 48px;
     line-height: 60px;
     color: #13A3AC;
-    margin: 15px 0;
+    margin: 15px 0 15px 10%;
 }
 
 .our-blog h4 {
@@ -927,10 +954,19 @@ a {
     letter-spacing: 0.2em;
     color: #13A3AC;
     margin-bottom: 35px;
+    margin-left: 10.5%;
+}
+
+.blog-boxes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .the-blog-box {
-    width: 100%;
+    width: 80%;
     height: auto;
     background: #FFFFFF;
     padding: 20px 40px;
@@ -997,7 +1033,11 @@ a {
     left: 0;
     height: 330px;
     margin-top: -150px;
+    z-index: 1;
 }
+
+
+/* OUR BLOG SESSION MEDIA QUERY FOR MOBILE */
 
 @media screen and (max-width:800px) {
     .our-blog {
@@ -1009,29 +1049,18 @@ a {
     .the-blog-box {
         flex-direction: column;
         padding: 15px;
+        width: 100%;
     }
-
-    .our-blog .img12 {
-        top: -120px;
-        height: 100px;
-    }
-
-    .img0 {
-        display: none;
-    }
-
-    .our-blog .img13 {
-        height: 150px;
-        top: -100px;
-    } 
 
     .our-blog h1 {
         font-size: 33px;
         line-height: 40px;
+        margin-left: 0;
     }
 
     .our-blog h4 {
         font-size: 14px;
+        margin-left: 0;
     }
 
     .the-blog-box {
@@ -1069,27 +1098,166 @@ a {
         margin: 40px 0;
     }
 
-    .our-blog .img12 {
-        top: -120px;
-        height: 120px;
+    .our-blog h1,
+    .our-blog h4 {
+        margin-left: 0;
     }
-
-    .img0 {
-        display: none;
-    }
-
-    .our-blog .img13 {
-        height: 250px;
-        top: -100px;
-    } 
 
     .our-blog .img14 {
         height: 250px;
+        bottom: -150px;
     }
 
     .the-blog-box {
         align-items: center;
+        width: 100%;
     }
 }
 
 /* OUR BLOG SESSION END */
+
+/* NEWS LETTER SESSION BEGINS */
+
+.news-letter-signup {
+    width: 100%;
+    height: auto;
+    background: #13A3AC;
+    padding: 120px 80px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.news-letter-signup .img15 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 150px;
+}
+
+.news-letter-signup .img16 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 150px;
+}
+
+.the-news-letter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #FFFFFF;
+    padding: 50px;
+    border-radius: 5px;
+}
+
+.signup h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: left;
+    color: #13A3AC;
+    margin-bottom: 10px;
+}
+
+.signup p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #003047;
+    margin-bottom: 12px;
+}
+
+.the-news-letter .form {
+    display: flex;
+    justify-content: center;
+}
+
+.the-news-letter form input {
+    padding: 15px 10px;
+    border: none;
+    font-size: 16px;
+    border: 3px solid #13A3AC;
+    border-radius: 50px;
+}
+
+.the-news-letter form ::placeholder {
+    color: #13A3AC;
+    font-size: 12px;
+}
+
+.the-news-letter form button {
+    padding: 15px;
+    border-radius: 50px;
+    border: none;
+    background: #13A3AC;
+    margin-left: -50px;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 200%;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.the-news-letter form button:hover {
+    padding: 15px 17px;
+}
+
+
+/* NEWS LETTER SESSION MEDIA QUERY FOR MOBILE */
+
+@media screen and (max-width:800px) {
+
+    .news-letter-signup {
+        padding: 65px 20px;
+        margin-top: 50px;
+    }
+
+    .news-letter-signup .img15,
+    .news-letter-signup .img16 {
+        height: 90px;
+    }
+
+    .the-news-letter {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .signup h2 {
+        font-size: 25px;
+    }
+
+    .signup p {
+        margin-bottom: 10px;
+        line-height: 20px;
+    }
+
+    .the-news-letter form input {
+        
+    }
+}
+
+
+/* NEWS LETTER SESSION MEDIA QUERY FOR SOME TABLETS */
+
+@media only screen and (max-width:1100px) and (min-width:800px) {
+
+    .news-letter-signup {
+        padding: 80px 50px;
+    }
+
+    .news-letter-signup .img15,
+    .news-letter-signup .img16 {
+        height: 120px;
+    }
+
+    .the-news-letter {
+        flex-direction: column;
+        padding: 35px;
+    }
+
+    
+}
