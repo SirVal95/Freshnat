@@ -59,14 +59,14 @@ function topFunction () {
 
 // scroll reveal
 
-// ScrollReveal({
-//   reset: true,
-//   distance:'20px',
-//   delay: 60,
-//   duration: 1500
-// });
+ScrollReveal({
+  reset: true,
+  distance:'20px',
+  delay: 60,
+  duration: 1500
+});
 
 
-// ScrollReveal().reveal('.fresh-and-natural-1, .freshest, .the-box, .the-blog-box', { delay: 50, origin: 'bottom', interval: 100 });
-// ScrollReveal().reveal('.vegetable, .buy-your-craving', { delay: 50, origin: 'top', interval: 100 });
+ScrollReveal().reveal('.fresh-and-natural-1, .freshest, .the-box, .the-blog-box, .the-news-letter, .footer-left', { delay: 50, origin: 'bottom', interval: 100 });
+ScrollReveal().reveal('.vegetable, .buy-your-craving, .footer-right', { delay: 50, origin: 'top', interval: 100 });
 

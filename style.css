@@ -1261,3 +1261,258 @@ a {
 
     
 }
+
+
+/* FOOTER SESSION */
+
+.footer {
+    width: 100%;
+    height: auto;
+    background: #F0FFF7;
+}
+
+.footer-overlay {
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    background: url(assets/TeaImages/coffee\ patter\ 1.png) repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left,
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-left {
+    align-items: left;
+}
+
+.footer-logo {
+    background: #13A3AC;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+}
+
+.footer-logo img {
+    height: 25px;
+    margin-right: 7px;
+}
+
+.footer-logo h4 {
+    color: #FFFFFF;
+    letter-spacing: 1px;
+}
+
+.links-and-company {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.links-and-company h4 {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 250%;
+    color: #13A3AC;
+    margin-top: 20px;
+}
+
+.links-and-company a {
+    display: block;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 26px;
+    color: #13A3AC;
+    transition: 0.5s ease-in-out;
+}
+
+
+.links-and-company .links {
+    margin-right: 120px;
+    text-align: left;
+}
+
+.footer-right {
+    align-items: flex-end;
+}
+
+.footer-right h2 {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    color: #13A3AC;
+    text-align: left;
+}
+
+.footer-right p {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    text-align: right;
+    color: #13A3AC;
+    margin: 30px 0;
+}
+
+.footer-right a {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-style: normal;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 200%;
+    color: #13A3AC;
+    text-align: center;
+    padding: 10px 20px;
+    gap: 10px;
+    background: transparent;
+    border: 2px solid #13A3AC;
+    border-radius: 50px;
+    transition: 0.5s ease-in-out;
+}
+
+.footer-right a:hover {
+    transform: translateY(-10px);
+}
+
+.footer-right .fa-chevron-right {
+    border-color: #13A3AC;
+}
+
+
+.designed-by {
+    background: #FFFFFF;
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    text-align: center;
+}
+
+.designed-by p {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    text-align: center;
+    color: #13A3AC;
+}
+
+.designed-by a {
+    color: #13A3AC;
+    font-weight: 700;
+    margin: 0 5px;
+}
+
+.designed-by a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width:800px) {
+    .footer-overlay {
+        padding: 30px;
+        flex-direction: column-reverse;
+    }
+
+    .footer-right {
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-right h2 {
+        font-size: 33px;
+        line-height: 40px;
+    }
+
+    .footer-right p {
+        font-size: 14px;
+        line-height: 170%;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .footer-right a {
+        font-size: 14px;
+
+    }
+
+    .footer-left {
+        margin-top: 50px;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .footer-logo {
+        width: 50%;
+    }
+
+    .links-and-company .links{
+        margin-right: 60px;
+    }
+
+    .links-and-company h4 {
+        font-size: 18px;
+        line-height: 200%;
+    }
+    
+    .links-and-company a {
+        font-size: 14px;
+        margin-top: 22px;
+    }
+
+    .designed-by {
+        padding: 20px;
+    }
+
+    .designed-by p {
+        font-size: 14px;
+        line-height: 180%;
+    }
+}
+
+/* OUR BLOG SESSION MEDIA QUERY FOR SOME TABLETS */
+
+@media only screen and (max-width:1100px) and (min-width:800px) {
+    .footer a {
+        font-size: 17px;
+    }
+
+    .links-and-company a {
+        font-size: 14px;
+    }
+
+    .links-and-company h4 {
+        font-size: 18.5px;
+    }
+
+    .footer-right h2 {
+        font-size: 38px;
+    }
+
+    .footer-right p {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+
+    .designed-by p {
+        font-size: 14px;
+    }
+}
